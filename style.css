@@ -15,6 +15,14 @@ header div {
   flex-direction: row;
   align-items: center;
 }
+header li a:hover {
+  background-color: #aa0082;
+}
+footer li a:hover {
+  text-decoration-style: solid;
+  text-decoration-color: white;
+  text-decoration-line: underline;
+}
 
 @keyframes flip-horizontal-bottom {
   0% {
@@ -31,33 +39,47 @@ header div {
 }
 
 #bookstore-title {
+  text-decoration: none;
+  font-size: 30px;
   color: white;
   -webkit-text-stroke: 0.2px #e61e2a;
   margin: auto;
+  padding-right: 50px;
 }
-
 #bookstore-title:hover {
   animation: flip-horizontal-bottom 4s infinite;
 }
+
 header nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   background-color: #e61e2a;
-  height: 40px;
+  height: 50px;
 }
-header nav li,
-footer nav li {
+header nav li{
   list-style-type: none;
   display: inline;
   padding: 15px;
 }
-header nav li a,
-footer nav li a {
-  font-size: large;
+
+header nav li a {
+  font-size: 20px;
   text-decoration: none;
   color: white;
 }
+footer nav li a {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+footer nav li {
+  list-style-type: none;
+  display: inline;
+  padding: 10px;
+}
+
 footer nav {
   display: flex;
   align-items: center;
