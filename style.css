@@ -1,108 +1,42 @@
 @import url("https://fonts.googleapis.com/css?family=Exo:400,700");
 
-body {
-  font-family: "Exo", sans-serif;
-}
-
-iframe {
-  width: 100%;
-  height: 700px;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 1166px) {
-  iframe {
-    width: 100%;
-    height: 600px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  iframe {
-    width: 100%;
-    height: 600px;
-  }
-}
-@media screen and (max-width: 980px) {
-  iframe {
-    width: 100%;
-    height: 450px;
-  }
-}
-@media screen and (max-width: 767px) {
-  iframe {
-    width: 100%;
-    height: 500px;
-  }
-}
 @media screen and (max-width: 600px) {
-  iframe {
-    width: 100%;
-    height: 450px;
+  .top-nav-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  header nav {
+
+  .top-nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 }
-@media screen and (max-width: 479px) {
-  iframe {
-    width: 100%;
-    height: 185px;
-  }
+
+body {
+  margin: 0;
+  font-family: "Exo", sans-serif;
 }
 
 header,
 footer {
   background-color: #000054;
-  display: flex;
-  flex-direction: column;
 }
 
 footer{
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
-header nav,
-footer nav {
+.top-brand-section {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
 }
 
-.header-decoration {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.header-navigation {
-  background-color: #e61e2a;
-  gap: 20px;
-  padding-right: 10px;
-}
-
-.header-navigation a {
-  font-size: 20px;
-  text-decoration: none;
-  color: white;
-}
-
-.header-navigation a:hover {
-  background-color: #aa0082;
-}
-
-.footer-navigation a {
-  font-size: 15px;
-  text-decoration: none;
-  color: white;
-  padding: 10px;
-}
-
-.footer-navigation a:hover {
-  text-decoration-style: solid;
-  text-decoration-color: white;
-  text-decoration-line: underline;
+.top-brand-section .brand-logo {
+  width: 40px;
+  height: 40px;
 }
 
 @keyframes flip-horizontal-bottom {
@@ -121,33 +55,70 @@ footer nav {
   }
 }
 
-#bookstore-title {
+.top-brand-section .brand-title {
   text-decoration: none;
   font-size: 30px;
   color: white;
   -webkit-text-stroke: 0.2px #e61e2a;
-  margin: auto;
-  padding-right: 50px;
 }
 
-#bookstore-title:hover {
+.top-brand-section .brand-title:hover {
   animation: flip-horizontal-bottom 4s infinite;
 }
 
-.rich-medias {
+.top-nav-container {
+  background-color: #e61e2a;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding-right: 20px;
+}
+
+.top-nav a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.top-nav a:hover {
+  background-color: #aa0082;
+}
+
+.footer-nav-container {
   display: flex;
   align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
-.rich-medias iframe {
-  border-width: 20px;
-  display: inline;
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 5px;
 }
 
-.book-categories ul {
+.footer-nav a {
+  font-size: 10px;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+}
+
+.footer-nav a:hover {
+  text-decoration-style: solid;
+  text-decoration-color: white;
+  text-decoration-line: underline;
+}
+
+.book-categories-container{
+  margin-top: 10px;
+}
+
+.book-categories-container ul {
   list-style-type: none;
   padding-inline-start: 0px;
   margin: auto;
@@ -157,6 +128,8 @@ footer nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .catergory-name {
@@ -170,19 +143,38 @@ footer nav {
 .books-info {
   display: flex;
   flex-direction: row;
-  gap: 5px;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .book-info {
   padding: 10px;
   border-style: solid;
+  width: 150px;
+  height: 200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
 }
 
 .book-info img {
+  width: 100px;
+  height: 100px;
   border-style: solid;
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 .book-info p {
   text-align: center;
+  font-size: 20px;
 }
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 1440px) {}
+
+@media screen and (max-width: 2560px) {}

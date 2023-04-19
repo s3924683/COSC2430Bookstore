@@ -1,7 +1,2 @@
- <nav class="footer-navigation">
-      <a href="./index.html">About us</a>
-      <a href="./index.html">Privacy Policy</a>
-      <a href="./index.html">Terms</a>
-      <a href="./index.html">Copyright</a>
-      <a href="./index.html">Contact Us</a>
-    </nav>
+<iframe width="450" height="300" src="https://www.youtube.com/embed/JoEJqnyYbxY?controls=0"
+        title="YouTube video player" frameborder="0" allowfullscreen=""></iframe>
