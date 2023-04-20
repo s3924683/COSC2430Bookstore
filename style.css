@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Exo:400,700");
 
+select{
+  width: 20em;
+  height: 2em;
+  font-size: 0.8em;
+}
+
+input{
+  width: 20em;
+  height: 2em;
+}
+
 img {
   width: 1em;
   height: 1em;
@@ -231,6 +242,43 @@ footer {
 .book-info p {
   text-align: center;
   font-size: 1.8em;
+}
+
+.contact-us-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-style: solid;
+  background-color: #000054;
+  padding: 1em;
+  gap: 1em;
+}
+
+.contact-us-form .form-title {
+  font-size: 3.0em;
+  color: white;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.contact-us-form .form-field {
+  font-size: 2.0em;
+  color: white;
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em
+}
+
+.contact-us-form .form-buttons {
+  display: flex;
+}
+
+#contact-purpose{
+  width: 16.2em;
+  height: 2em;
 }
 
 @media screen and (min-width: 600px) {

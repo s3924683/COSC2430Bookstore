@@ -25,52 +25,59 @@
     </nav>
   </header>
   <main>
-    <form action="" method="post" class="contact-form">
-      <fieldset>
-        <legend>Contact purpose</legend>
-        <label for="contact-purpose">What do you contact us for?</label>
+    <form action="" method="post" class="contact-us-form">
+      <legend class="form-title">Contact us</legend>
+
+      <div class="form-field">
+        <label for="contact-purpose">Contact purpose:</label>
         <select name="contact-purpose" id="contact-purpose" required>
           <option value="sell-books">I want to sell books</option>
           <option value="buy-books">I want to buy books</option>
         </select>
-      </fieldset>
-      <fieldset>
-        <legend>Personal infomation</legend>
-        <label for="name">Enter your name: </label>
-        <input type="text" name="name" id="name" required>
-
-        <label for="name">Enter your email: </label>
-        <input type="email" name="email" id="email" required>
-
-        <label for="name">Enter your phone number: </label>
-        <input type="number" name="phone-number" id="phone-number" required>
-      </fieldset>
-      <fieldset>
-        <legend>Extra infomation</legend>
-        <fieldset>
-          <legend>Contact preference</legend>
-          <label for="email-preference">By Email</label>
-          <input type="checkbox" name="contact-preference" id="email-preference" required>
-
-          <label for="phone-preference">By Phone</label>
-          <input type="checkbox" name="contact-preference" id="phone-preference" required>
-        </fieldset>
-
-        <fieldset>
-          <legend>
-            Receive weekly newsletter
-          </legend>
+      </div>
+      <div class="form-field">
+        <div>
+          <label for="name">Name: </label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+          <label for="email">Email: </label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+          <label for="phone-number">Phone number: </label>
+          <input type="number" name="phone-number" id="phone-number" required>
+        </div>
+      </div>
+      <div class="form-field">
+        <label>Contact preference:</label>
+        <div id="email-preference"> 
+          <label for="email-preference">Email</label>
+          <input type="checkbox" name="contact-preference" id="email-preference">
+          <label for="phone-preference">Phone</label>
+          <input type="checkbox" name="contact-preference" id="phone-preference">
+        </div>
+      </div>
+      <div class="form-field ">
+        <label>Receive weekly newsletter:</label>
+        <div id="weekly-newsletter">
           <label for="weekly-newsletter-yes">Yes</label>
           <input type="radio" name="weekly-newsletter" id="weekly-newsletter-yes" required checked>
-
           <label for="weekly-newsletter-no">No</label>
           <input type="radio" name="weekly-newsletter" id="weekly-newsletter-no" required>
-        </fieldset>
-      </fieldset>
+        </div>
+      </div>
+      <div class="form-field">
+        <label>Extra information:</label>
+        <br>
+        <textarea id="extra-information" name="extra-information" rows="4" cols="50">
+        </textarea>
+      </div>
 
-      <label for="submit-form"></label>
-          <input type="submit" name="submit-form">
-          <input type="button" name="reset-form" id="reset-form">
+      <div class="form-buttons">
+        <input type="submit">
+        <input type="reset">
+      </div>
     </form>
   </main>
   <footer>
