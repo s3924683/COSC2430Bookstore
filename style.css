@@ -3,18 +3,22 @@
 h1 {
   font-size: 2em;
 }
+
 h1.smaller {
   font-size: 1.9375em;
 }
+
 h2 {
   font-size: 1.625em;
 }
+
 body {
   font-family: "Exo", sans-serif;
   font-size: 0.8125em;
   height: 100%;
   margin: 0;
 }
+
 html {
   font-size: 0.8125em;
   height: 100%;
@@ -38,6 +42,24 @@ footer {
 .top-brand-section .brand-logo {
   width: 3.5em;
   height: 3.5em;
+}
+
+.rich-media-container {
+  background-color: #000054;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.rich-media-container .video-info-container {
+  text-align: center;
+  font-size: 2em;
+  text-decoration: wavy;
+  text-decoration-line: underline;
+  text-decoration-color: #e61e2a;
+  color: white
 }
 
 @keyframes flip-horizontal-bottom {
@@ -87,6 +109,7 @@ footer {
 .top-nav a:hover {
   background-color: #aa0082;
 }
+
 .footer-nav-container {
   display: flex;
   align-items: center;
@@ -114,6 +137,7 @@ footer {
 
 .book-categories-container {
   margin-top: 1em;
+  display: flex;
 }
 
 .book-categories-container ul {
@@ -183,33 +207,40 @@ footer {
     border-style: none;
   }
 }
+
 @media screen and (min-width: 768px) {
   html {
     font-size: 1em;
   }
+
   .top-brand-section .brand-logo {
     width: 3.5em;
     height: 3.5em;
   }
 }
+
 @media screen and (min-width: 1024px) {
   html {
     font-size: 1.25em;
   }
+
   .top-brand-section .brand-logo {
     width: 3.75em;
     height: 3.75em;
   }
 }
+
 @media screen and (min-width: 1440px) {
   html {
     font-size: 1.5em;
   }
+
   .top-brand-section .brand-logo {
     width: 4em;
     height: 4em;
   }
 }
+
 @media screen and (min-width: 2560px) {
   html {
     font-size: 2em;
