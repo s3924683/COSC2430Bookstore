@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Exo:400,700");
 
+img {
+  width: 1em;
+  height: 1em;
+}
+
+iframe {
+  width: 40em;
+  height: 30em;
+}
+
 h1 {
   font-size: 2em;
 }
@@ -46,11 +56,32 @@ footer {
 
 .rich-media-container {
   background-color: #000054;
-  padding: 1em;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+@keyframes underline-color-animation {
+  0% {
+    text-decoration-color: #e61e2a;
+  }
+
+  20% {
+    text-decoration-color: yellow;
+  }
+
+  60% {
+    text-decoration-color: green;
+  }
+
+  80% {
+    text-decoration-color: white;
+  }
+
+  100% {
+    text-decoration-color: red;
+  }
 }
 
 .rich-media-container .video-info-container {
@@ -59,7 +90,8 @@ footer {
   text-decoration: wavy;
   text-decoration-line: underline;
   text-decoration-color: #e61e2a;
-  color: white
+  color: white;
+  animation: underline-color-animation 10s infinite
 }
 
 @keyframes flip-horizontal-bottom {
@@ -77,6 +109,7 @@ footer {
     transform: rotateX(-360deg);
   }
 }
+
 
 .top-brand-section .brand-title {
   text-decoration: none;
@@ -149,14 +182,20 @@ footer {
 .book-category {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   margin-top: 2em;
   gap: 1em;
+  border-style: groove;
+  border-radius: 0.1em;
+  border-width: 0.5em;
+  padding: 1em;
 }
 
 .catergory-name {
   font-size: 2.5em;
+  text-align: center;
+  background-color: #000054;
+  color: white;
 }
 
 .book-category a {
@@ -212,21 +251,11 @@ footer {
   html {
     font-size: 1em;
   }
-
-  .top-brand-section .brand-logo {
-    width: 3.5em;
-    height: 3.5em;
-  }
 }
 
 @media screen and (min-width: 1024px) {
   html {
     font-size: 1.25em;
-  }
-
-  .top-brand-section .brand-logo {
-    width: 3.75em;
-    height: 3.75em;
   }
 }
 
@@ -234,20 +263,10 @@ footer {
   html {
     font-size: 1.5em;
   }
-
-  .top-brand-section .brand-logo {
-    width: 4em;
-    height: 4em;
-  }
 }
 
 @media screen and (min-width: 2560px) {
   html {
     font-size: 2em;
-  }
-
-  .top-brand-section .brand-logo {
-    width: 5em;
-    height: 5em;
   }
 }
