@@ -1,96 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="icon"
+      href="../assets/images/icons/rmit-icon.png"
+      type="image/icon type"
+    />
 
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="icon" href="../assets/images/icons/rmit-icon.png" type="image/icon type" />
+    <title>RMIT Bookstore</title>
+  </head>
 
-  <title>RMIT Bookstore</title>
-</head>
-
-<body>
-  <header>
-    <div class="top-brand-section">
-      <img class="brand-logo" src="../assets/images/icons/rmit-icon.png" alt="RMIT icon" />
-      <a class="brand-title" href="../index.html">RMIT Bookstore</a>
-    </div>
-    <nav class="top-nav">
-      <a href="../index.html">Home</a>
-      <a href="../pages/non-fiction.html">Non-Fiction</a>
-      <a href="../pages/fiction.html">Fiction</a>
-    </nav>
-  </header>
-  <main>
-    <form action="" method="post" class="contact-us-form">
-      <legend class="form-title">Contact us</legend>
-
-      <div class="form-field">
-        <label for="contact-purpose">Contact purpose:</label>
-        <select name="contact-purpose" id="contact-purpose" required>
-          <option value="sell-books">I want to sell books</option>
-          <option value="buy-books">I want to buy books</option>
-        </select>
+  <body>
+    <header>
+      <div class="top-brand-section">
+        <img
+          class="brand-logo"
+          src="../assets/images/icons/rmit-icon.png"
+          alt="RMIT icon"
+        />
+        <a class="brand-title" href="../index.html">RMIT Bookstore</a>
       </div>
-      <div class="form-field">
-        <div>
-          <label for="name">Name: </label>
-          <input type="text" name="name" id="name" required>
-        </div>
-        <div>
-          <label for="email">Email: </label>
-          <input type="email" name="email" id="email" required>
-        </div>
-        <div>
-          <label for="phone-number">Phone number: </label>
-          <input type="number" name="phone-number" id="phone-number" required>
-        </div>
-      </div>
-      <div class="form-field">
-        <label>Contact preference:</label>
-        <div id="email-preference"> 
-          <label for="email-preference">Email</label>
-          <input type="checkbox" name="contact-preference" id="email-preference">
-          <label for="phone-preference">Phone</label>
-          <input type="checkbox" name="contact-preference" id="phone-preference">
-        </div>
-      </div>
-      <div class="form-field ">
-        <label>Receive weekly newsletter:</label>
-        <div id="weekly-newsletter">
-          <label for="weekly-newsletter-yes">Yes</label>
-          <input type="radio" name="weekly-newsletter" id="weekly-newsletter-yes" required checked>
-          <label for="weekly-newsletter-no">No</label>
-          <input type="radio" name="weekly-newsletter" id="weekly-newsletter-no" required>
-        </div>
-      </div>
-      <div class="form-field">
-        <label>Extra information:</label>
-        <br>
-        <textarea id="extra-information" name="extra-information" rows="4" cols="50">
-        </textarea>
-      </div>
-
-      <div class="form-buttons">
-        <input type="submit">
-        <input type="reset">
-      </div>
-    </form>
-  </main>
-  <footer>
-    <div class="footer-nav-container">
-      <nav class="footer-nav">
-        <a href="../index.html">About us</a>
-        <a href="../index.html">Privacy Policy</a>
-        <a href="../index.html">Terms</a>
-        <a href="../index.html">Copyright</a>
-        <a href="../index.html">Contact Us</a>
+      <nav class="top-nav">
+        <a href="../index.html">Home</a>
+        <a href="../pages/non-fiction.html">Non-Fiction</a>
+        <a href="../pages/fiction.html">Fiction</a>
       </nav>
-    </div>
-  </footer>
-</body>
+    </header>
+    <main>
+      <div class="form-container">
+        <form action="" method="post" id="contact-us-form">
+          <legend class="form-title">Contact us</legend>
 
+          <label for="contact-purpose">Contact purpose:</label>
+          <select name="contact-purpose" id="contact-purpose" required>
+            <option value="sell-books">I want to sell books</option>
+            <option value="buy-books">I want to buy books</option>
+          </select>
+
+          <label for="name">Name: </label>
+          <input type="text" name="name" id="name" required />
+
+          <label for="email">Email: </label>
+          <input type="email" name="email" id="email" required />
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-nav-container">
+        <nav class="footer-nav">
+          <a href="../index.html">About us</a>
+          <a href="../index.html">Privacy Policy</a>
+          <a href="../index.html">Terms</a>
+          <a href="../index.html">Copyright</a>
+          <a href="../index.html">Contact Us</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
 </html>

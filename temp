@@ -1,0 +1,108 @@
+<div class="form-field">
+  <label for="contact-purpose">Contact purpose:</label>
+  <select name="contact-purpose" id="contact-purpose" required>
+    <option value="sell-books">I want to sell books</option>
+    <option value="buy-books">I want to buy books</option>
+  </select>
+</div>
+
+<div class="form-field" id="personal-info-form-field">
+  <div>
+    <label for="name">Name: </label>
+    <input type="text" name="name" id="name" required />
+  </div>
+  <div>
+    <label for="email">Email: </label>
+    <input type="email" name="email" id="email" required />
+  </div>
+  <div>
+    <label for="phone-number">Phone number: </label>
+    <input
+      type="number"
+      name="phone-number"
+      id="phone-number"
+      required
+    />
+  </div>
+</div>
+
+<div class="form-field">
+  <label>Contact preference:</label>
+
+  <div id="form-contact-preference">
+    <div>
+      <label for="email-preference">By email</label>
+      <input
+        type="checkbox"
+        name="contact-preference"
+        id="email-preference"
+      />
+    </div>
+    <div>
+      <label for="phone-preference">By phone</label>
+      <input
+        type="checkbox"
+        name="contact-preference"
+        id="phone-preference"
+      />
+    </div>
+  </div>
+</div>
+
+<div class="form-field">
+  <label>Receive weekly newsletter:</label>
+
+  <div id="form-weekly-newsletter">
+    <div>
+      <label for="weekly-newsletter-yes">Yes</label>
+      <input
+        type="radio"
+        name="weekly-newsletter"
+        id="weekly-newsletter-yes"
+        required
+        checked
+      />
+    </div>
+
+    <div>
+      <label for="weekly-newsletter-no">No</label>
+      <input
+        type="radio"
+        name="weekly-newsletter"
+        id="weekly-newsletter-no"
+        required
+      />
+    </div>
+  </div>
+</div>
+<div class="form-field">
+  <label>Receive weekly newsletter:</label>
+  <div id="weekly-newsletter">
+    <label for="weekly-newsletter-yes">Yes</label>
+    <input
+      type="radio"
+      name="weekly-newsletter"
+      id="weekly-newsletter-yes"
+      required
+      checked
+    />
+    <label for="weekly-newsletter-no">No</label>
+    <input
+      type="radio"
+      name="weekly-newsletter"
+      id="weekly-newsletter-no"
+      required
+    />
+  </div>
+</div>
+<div class="form-field">
+  <label>Extra information:</label>
+  <br />
+  <textarea id="extra-information" name="extra-information" rows="4" cols="50">
+  </textarea>
+</div>
+
+<div class="form-buttons">
+  <input type="submit" />
+  <input type="reset" />
+</div>
