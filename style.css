@@ -108,7 +108,7 @@ footer {
   text-decoration: none;
   font-size: 3.5em;
   color: white;
-  -webkit-text-stroke: 0.2px #e61e2a;
+  -webkit-text-stroke: 0.005em #e61e2a;
 }
 
 .top-brand-section .brand-title:hover {
@@ -119,7 +119,6 @@ footer {
   background-color: #e61e2a;
   display: flex;
   flex-direction: column;
-  gap: 0px;
 }
 
 .top-nav a {
@@ -270,15 +269,21 @@ footer {
   padding: 0.3em;
 }
 
+
+section.book-detail-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .book-detail-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-style: solid;
-  border-width: 0.5em;
-  padding: 2em;
-  gap: 1em;
+  border-width: 0.3em;
 }
 
 .book-detail-container .section {
@@ -288,6 +293,7 @@ footer {
   align-items: center;
   justify-content: flex-start;
   gap: 1em;
+  padding: 1em;
 }
 
 .book-detail-container .book-display-image {
@@ -300,11 +306,12 @@ footer {
 .book-detail-container .extra-images-container {
   display: flex;
   flex-direction: column;
+  gap: 0.5em;
 }
 
 .book-detail-container .extra-images-container img {
-  width: 5em;
-  height: 5em;
+  width: 2em;
+  height: 2em;
   border-style: solid;
   border-width: 0.5em;
 }
@@ -333,7 +340,7 @@ p.book-title {
   font-weight: bold;
 }
 
-p.book-description{
+p.book-description {
   font-size: 1.5em;
 }
 
@@ -347,18 +354,17 @@ p.book-description{
 
 /* Style the list */
 ul.breadcrumb {
-  padding: 10px 16px;
+  padding: 0.5em 0.5em;
   list-style: none;
-  background-color: #eee;
 }
 /* Display list items side by side */
 ul.breadcrumb li {
   display: inline;
-  font-size: 18px;
+  font-size: 2em;
 }
 /* Add a slash symbol (>) before/behind each list item */
 ul.breadcrumb li + li:before {
-  padding: 8px;
+  padding: 0.1em;
   color: black;
   content: ">\00a0";
 }
