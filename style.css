@@ -1,31 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Exo:400,700");
 
-select {
-  width: 10em;
-  height: 1em;
-  font-size: 0.5em;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-img {
-  width: 1em;
-  height: 1em;
-}
-
-iframe {
-  width: 40em;
-  height: 30em;
-}
-
-h1 {
-  font-size: 2em;
-}
-
-h1.smaller {
-  font-size: 1.9375em;
-}
-
-h2 {
-  font-size: 1.625em;
+input[type="checkbox"],
+input[type="radio"] {
+  width: 2em;
+  height: 2em;
 }
 
 body {
@@ -66,6 +49,11 @@ footer {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.rich-media-container iframe {
+  width: 30em;
+  height: 20em;
 }
 
 @keyframes underline-color-animation {
@@ -244,12 +232,15 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 0.5em;
+  margin-top: 1em;
 }
-
 #contact-us-form {
   background-color: #000054;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }
-
 #contact-us-form .form-title {
   color: white;
   font-size: 3em;
@@ -257,58 +248,129 @@ footer {
   font-weight: bold;
   text-align: center;
 }
-
-#contact-us-form .form-field {
-  font-size: 2em;
-  color: white;
+#contact-us-form fieldset {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  gap: 0.2em;
+  padding: 3em;
+  gap: 1em;
 }
-
 #contact-us-form label {
   color: white;
-  font-size: 2.0em;
+  font-size: 2em;
 }
-
-#contact-purpose {
-  width: 20em;
-  height: 2.5em;
-  font-size: 0.6em;
-}
-
-#personal-info-form-field div input {
-  width: 20em;
-  height: 2em;
-}
-
-#form-contact-preference {
+#contact-us-form .form-buttons {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+#contact-us-form .form-buttons input {
+  font-size: 3em;
+  padding: 0.3em;
+}
+
+.book-detail-container {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2em;
+  border-style: solid;
+  border-width: 0.5em;
+  padding: 2em;
+  gap: 1em;
 }
 
-#form-contact-preference div input {
-  margin: 0;
-  padding: 0;
-  width: 1.5em;
-  height: 1.5em;
-}
-
-#form-weekly-newsletter {
+.book-detail-container .section {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+}
+
+.book-detail-container .book-display-image {
+  width: 10em;
+  height: 10em;
+  border-style: solid;
+  border-width: 0.5em;
+}
+
+.book-detail-container .extra-images-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-detail-container .extra-images-container img {
+  width: 5em;
+  height: 5em;
+  border-style: solid;
+  border-width: 0.5em;
+}
+
+.book-detail-container .book-purchase-container {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2em;
+  gap: 1em;
 }
 
-#form-weekly-newsletter div input {
-  margin: 0;
-  padding: 0;
-  width: 1.5em;
-  height: 1.5em;
+div.book-purchase-container p {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+div.book-purchase-container button {
+  font-size: 1.5em;
+  border-radius: 0.3em;
+  padding: 0.3em;
+}
+
+p.book-title {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+p.book-description{
+  font-size: 1.5em;
+}
+
+.book-description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1em;
+}
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+/* Add a slash symbol (>) before/behind each list item */
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: ">\00a0";
+}
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 600px) {

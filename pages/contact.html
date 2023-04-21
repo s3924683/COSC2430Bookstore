@@ -36,17 +36,81 @@
         <form action="" method="post" id="contact-us-form">
           <legend class="form-title">Contact us</legend>
 
-          <label for="contact-purpose">Contact purpose:</label>
-          <select name="contact-purpose" id="contact-purpose" required>
-            <option value="sell-books">I want to sell books</option>
-            <option value="buy-books">I want to buy books</option>
-          </select>
+          <fieldset>
+            <label for="contact-purpose">Contact purpose:</label>
+            <select name="contact-purpose" id="contact-purpose" required>
+              <option value="sell-books">I want to sell books</option>
+              <option value="buy-books">I want to buy books</option>
+            </select>
 
-          <label for="name">Name: </label>
-          <input type="text" name="name" id="name" required />
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" required />
 
-          <label for="email">Email: </label>
-          <input type="email" name="email" id="email" required />
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required />
+
+            <label for="phone-number">Phone number: </label>
+            <input
+              type="number"
+              name="phone-number"
+              id="phone-number"
+              required
+            />
+          </fieldset>
+
+          <fieldset id="form-contact-preference">
+            <label>Contact preference:</label>
+            <div>
+              <label for="email-preference">By email</label>
+              <input
+                type="checkbox"
+                name="contact-preference"
+                id="email-preference"
+              />
+            </div>
+            <div>
+              <label for="phone-preference">By phone</label>
+              <input
+                type="checkbox"
+                name="contact-preference"
+                id="phone-preference"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset id="form-weekly-newsletter">
+            <label>Receive weekly newsletter:</label>
+            <div>
+              <label for="weekly-newsletter-yes">Yes</label>
+              <input
+                type="radio"
+                name="weekly-newsletter"
+                id="weekly-newsletter-yes"
+                required
+                checked
+              />
+            </div>
+
+            <div>
+              <label for="weekly-newsletter-no">No</label>
+              <input
+                type="radio"
+                name="weekly-newsletter"
+                id="weekly-newsletter-no"
+                required
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <label>Extra information:</label>
+            <textarea></textarea>
+          </fieldset>
+
+          <div class="form-buttons">
+            <input type="submit" />
+            <input type="reset" />
+          </div>
         </form>
       </div>
     </main>
@@ -57,7 +121,7 @@
           <a href="../index.html">Privacy Policy</a>
           <a href="../index.html">Terms</a>
           <a href="../index.html">Copyright</a>
-          <a href="../index.html">Contact Us</a>
+          <a href="./contact.html">Contact Us</a>
         </nav>
       </div>
     </footer>
