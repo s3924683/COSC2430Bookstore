@@ -1,111 +1,172 @@
+<!--
+RMIT University Vietnam Course: COSC2430 Web Programming 
+Semester: 2023A
+Assessment: Assignment 1 
+Author: Nguyen Minh Tri 
+ID: s3924683 
+Acknowledgement: W3School, MDN Web Docs
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="icon"
+      href="../assets/images/icons/rmit-icon.png"
+      type="image/icon type"
+    />
 
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="icon" href="../assets/images/icons/rmit-icon.png" type="image/icon type" />
+    <title>RMIT Bookstore</title>
+  </head>
 
-  <title>RMIT Bookstore</title>
-</head>
+  <body>
+    <header>
+      <section class="flex-row-container">
+        <img
+          id="top-brand-logo"
+          src="../assets/images/icons/rmit-icon.png"
+          width="10em"
+          alt="RMIT icon"
+        />
+        <a href="../index.html" id="bookstore-title">RMIT Bookstore</a>
+      </section>
 
-<body>
-  <header>
-    <section class="flex-row-container">
-      <img
-        id="top-brand-logo"
-        src="../assets/images/icons/rmit-icon.png"
-        width="10em"
-        alt="RMIT icon"
-      />
-      <a href="../index.html" id="bookstore-title">RMIT Bookstore</a>
-    </section>
+      <nav class="flex-col-container" id="top-nav">
+        <a class="nav-link" href="../index.html">Home</a>
+        <a class="nav-link" href="./non-fiction.html">Non-Fiction</a>
+        <a class="nav-link" href="./fiction.html">Fiction</a>
+      </nav>
+    </header>
 
-    <nav class="flex-col-container" id="top-nav">
-      <a class="nav-link" href="../index.html">Home</a>
-      <a class="nav-link" href="./non-fiction.html">Non-Fiction</a>
-      <a class="nav-link" href="./fiction.html">Fiction</a>
-    </nav>
-  </header>
+    <main>
+      <section class="flex-row-container" id="book-categories-container">
+        <ul>
+          <li>
+            <section class="flex-col-container book-category">
+              <a class="book-catergory-name" href="./non-fiction.html"
+                ><strong>History</strong></a
+              >
+              <div class="flex-row-container warp-contents category-books-info">
+                <span class="flex-col-container category-book-info">
+                  <img
+                    src="../assets/images/books/the-art-of-war-cover.jpg"
+                    alt="The Art of War"
+                    height="100px"
+                    width="100px"
+                  />
+                  <a href="../pages/book-detail.html">The Art of War</a>
+                </span>
+                <span class="flex-col-container category-book-info">
+                  <img
+                    src="../assets/images/books/The-Count-of-Monte-Cristo-cover.jpg"
+                    alt="The Count of Monte Cristo"
+                    height="100px"
+                    width="100px"
+                  />
+                  <a href="#">The Count of Monte Cristo</a>
+                </span>
+                <span class="flex-col-container category-book-info">
+                  <img
+                    src="../assets/images/books/Tween-Snow-and-Fire-cover.jpg"
+                    alt="Tween Snow and Fire"
+                    height="100px"
+                    width="100px"
+                  />
+                  <a href="#">Tween Snow and Fire</a>
+                </span>
+              </div>
+            </section>
+          </li>
+          <li>
+            <section class="flex-col-container book-category">
+              <a class="book-catergory-name" href="./non-fiction.html"
+                ><strong>Science and Technology</strong>
+              </a>
+              <div class="flex-row-container warp-contents category-books-info">
+                <span class="flex-col-container category-book-info">
+                  <img
+                    src="../assets/images/books/criminal-psychology-cover.jpg"
+                    alt="Criminal Psychology"
+                    height="100px"
+                    width="100px"
+                  />
+                  <a href="#">Criminal Psychology</a>
+                </span>
+                <span class="flex-col-container category-book-info">
+                  <img
+                    src="../assets/images/books/ABC's-of-Science-cover.jpg"
+                    alt="ABC's of Science"
+                    height="100px"
+                    width="100px"
+                  />
+                  <a href="#">ABC's of Science</a>
+                </span>
+                <span class="flex-col-container category-book-info">
+                  <img
+                    src="../assets/images/books/On-the-Origin-of-Species-cover.jpg"
+                    alt="On the Origin of Species"
+                    height="100px"
+                    width="100px"
+                  />
+                  <a href="#">On the Origin of Species</a>
+                </span>
+              </div>
+            </section>
+          </li>
+          <li>
+            <section class="flex-col-container book-category">
+              <a class="book-catergory-name" href="./non-fiction.html"
+                ><strong>Art and Photography</strong>
+              </a>
+              <div class="flex-row-container warp-contents category-books-info">
+                <span class="flex-col-container category-book-info">
+                  <img
+                    src="../assets/images/books/The-art-of-interior-decoration-cover.jpg"
+                    alt="The Art of Interior Decoration"
+                    height="100px"
+                    width="100px"
+                  />
+                  <a href="#">The Art of Interior Decoration</a>
+                </span>
+                <span class="flex-col-container category-book-info">
+                  <img
+                    src="../assets/images/books/Art-Lovers-guide-to-the-Exposition-cover.jpg"
+                    alt="Art-Lovers guide to the Exposition"
+                    height="100px"
+                    width="100px"
+                  />
+                  <a href="#">Art-Lovers guide to the Exposition</a>
+                </span>
+                <span class="flex-col-container category-book-info">
+                  <img
+                    src="../assets/images/books/The-Elements-of-Drawing-cover.jpg"
+                    alt="The Elements of Drawing"
+                    height="100px"
+                    width="100px"
+                  />
+                  <a href="#">The Elements of Drawing</a>
+                </span>
+              </div>
+            </section>
+          </li>
+        </ul>
+      </section>
+    </main>
 
-  <main>
-    <section class="flex-row-container" id="book-categories-container">
-      <ul>
-        <li>
-          <section class="flex-col-container book-category">
-            <a class="book-catergory-name" href="./non-fiction.html"><strong>History</strong></a>
-            <div class="flex-row-container warp-contents category-books-info">
-              <span class="flex-col-container category-book-info">
-                <img src="../assets/images/books/the-art-of-war-cover.jpg" alt="The Art of War" height="100px" width="100px" />
-                <a href="../pages/book-detail.html">The Art of War</a>
-              </span>
-              <span class="flex-col-container category-book-info">
-                <img src="../assets/images/books/The-Count-of-Monte-Cristo-cover.jpg" alt="The Count of Monte Cristo" height="100px" width="100px" />
-                <a href="#">The Count of Monte Cristo</a>
-              </span>
-              <span class="flex-col-container category-book-info">
-                <img src="../assets/images/books/Tween-Snow-and-Fire-cover.jpg" alt="Tween Snow and Fire" height="100px" width="100px" />
-               <a href="#">Tween Snow and Fire</a>
-              </span>
-            </div>
-          </section>
-        </li>
-        <li>
-          <section class="flex-col-container book-category">
-            <a class="book-catergory-name" href="./non-fiction.html"><strong>Science and Technology</strong>
-            </a>
-            <div class="flex-row-container warp-contents category-books-info">
-              <span class="flex-col-container category-book-info">
-                <img src="../assets/images/books/criminal-psychology-cover.jpg" alt="Criminal Psychology" height="100px" width="100px" />
-                <a href="#">Criminal Psychology</a>
-              </span>
-              <span class="flex-col-container category-book-info">
-                <img src="../assets/images/books/ABC's-of-Science-cover.jpg" alt="ABC's of Science" height="100px" width="100px" />
-                <a href="#">ABC's of Science</a>
-              </span>
-              <span class="flex-col-container category-book-info">
-                <img src="../assets/images/books/On-the-Origin-of-Species-cover.jpg" alt="On the Origin of Species" height="100px" width="100px" />
-                <a href="#">On the Origin of Species</a>
-              </span>
-            </div>
-          </section>
-        </li>
-        <li>
-          <section class="flex-col-container book-category">
-            <a class="book-catergory-name" href="./non-fiction.html"><strong>Art and Photography</strong>
-            </a>
-            <div class="flex-row-container warp-contents category-books-info">
-              <span class="flex-col-container category-book-info">
-                <img src="../assets/images/books/The-art-of-interior-decoration-cover.jpg" alt="The Art of Interior Decoration" height="100px" width="100px" />
-                <a href="#">The Art of Interior Decoration</a>
-              </span>
-              <span class="flex-col-container category-book-info">
-                <img src="../assets/images/books/Art-Lovers-guide-to-the-Exposition-cover.jpg" alt="Art-Lovers guide to the Exposition" height="100px" width="100px" />
-                <a href="#">Art-Lovers guide to the Exposition</a>
-              </span>
-              <span class="flex-col-container category-book-info">
-                <img src="../assets/images/books/The-Elements-of-Drawing-cover.jpg" alt="The Elements of Drawing" height="100px" width="100px" />
-              <a href="#">The Elements of Drawing</a>
-              </span>
-            </div>
-          </section>
-        </li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <nav class="flex-row-container" id="footer-nav">
-      <a class="nav-link" href="#">About us</a>
-      <a class="nav-link" href="#">Privacy Policy</a>
-      <a class="nav-link" href="#">Terms</a>
-      <a class="nav-link" href="#">Copyright</a>
-      <a class="nav-link" href="./contact.html">Contact Us</a>
-    </nav>
-  </footer>
-</body>
-
+    <footer>
+      <nav class="flex-row-container" id="footer-nav">
+        <a class="nav-link" href="#">About us</a>
+        <a class="nav-link" href="#">Privacy Policy</a>
+        <a class="nav-link" href="#">Terms</a>
+        <a class="nav-link" href="#">Copyright</a>
+        <a class="nav-link" href="./contact.html">Contact Us</a>
+      </nav>
+    </footer>
+  </body>
 </html>

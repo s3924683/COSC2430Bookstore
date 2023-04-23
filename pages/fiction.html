@@ -1,111 +1,172 @@
+<!--
+RMIT University Vietnam Course: COSC2430 Web Programming 
+Semester: 2023A
+Assessment: Assignment 1 
+Author: Nguyen Minh Tri 
+ID: s3924683 
+Acknowledgement: W3School, MDN Web Docs
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="icon"
+      href="../assets/images/icons/rmit-icon.png"
+      type="image/icon type"
+    />
 
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="icon" href="../assets/images/icons/rmit-icon.png" type="image/icon type" />
+    <title>RMIT Bookstore</title>
+  </head>
 
-  <title>RMIT Bookstore</title>
-</head>
+  <body>
+    <header>
+      <section class="flex-row-container">
+        <img
+          id="top-brand-logo"
+          src="../assets/images/icons/rmit-icon.png"
+          width="10em"
+          alt="RMIT icon"
+        />
+        <a href="../index.html" id="bookstore-title">RMIT Bookstore</a>
+      </section>
 
-<body>
-  <header>
-    <section class="flex-row-container">
-      <img
-        id="top-brand-logo"
-        src="../assets/images/icons/rmit-icon.png"
-        width="10em"
-        alt="RMIT icon"
-      />
-      <a href="../index.html" id="bookstore-title">RMIT Bookstore</a>
-    </section>
+      <nav class="flex-col-container" id="top-nav">
+        <a class="nav-link" href="../index.html">Home</a>
+        <a class="nav-link" href="./non-fiction.html">Non-Fiction</a>
+        <a class="nav-link" href="./fiction.html">Fiction</a>
+      </nav>
+    </header>
 
-    <nav class="flex-col-container" id="top-nav">
-      <a class="nav-link" href="../index.html">Home</a>
-      <a class="nav-link" href="./non-fiction.html">Non-Fiction</a>
-      <a class="nav-link" href="./fiction.html">Fiction</a>
-    </nav>
-  </header>
+    <main>
+      <section class="flex-row-container" id="book-categories-container">
+        <ul>
+          <li>
+            <section class="flex-col-container book-category">
+              <a class="book-catergory-name" href="./fiction.html"
+                ><strong>Literary Fiction</strong></a
+              >
+              <div class="flex-row-container warp-contents category-books-info">
+                <span class="flex-col-container category-book-info">
+                  <img
+                    src="../assets/images/books/the-adventures-of-Sherlock-Holmes-cover.jpg"
+                    alt="The Adventures of Sherlock Holmes"
+                    height="100px"
+                    width="100px"
+                  />
+                  <a href="#">The Adventures of Sherlock Holmes</a>
+                </span>
+                <span class="flex-col-container category-book-info">
+                  <img
+                    src="../assets/images/books/A-Little-Princess-cover.jpg"
+                    alt="A Little Princess"
+                    height="100px"
+                    width="100px"
+                  />
+                  <a href="#">A Little Princess</a>
+                </span>
+                <span class="flex-col-container category-book-info">
+                  <img
+                    src="../assets/images/books/The-Grammar-of-English-Grammars.jpg"
+                    alt="The Grammar of English Grammars"
+                    height="100px"
+                    width="100px"
+                  />
+                  <a href="#">The Grammar of English Grammars</a>
+                </span>
+              </div>
+            </section>
+          </li>
+          <li>
+            <section class="flex-col-container book-category">
+              <a class="book-catergory-name" href="./fiction.html"
+                ><strong>Romance</strong>
+              </a>
+              <div class="flex-row-container warp-contents category-books-info">
+                <span class="flex-col-container category-book-info">
+                  <img
+                    src="../assets/images/books/pride-and-prejudice-cover.jpg"
+                    alt="Pride and Prejudice"
+                    height="100px"
+                    width="100px"
+                  />
+                  <a href="#">Pride and Prejudice</a>
+                </span>
+                <span class="flex-col-container category-book-info">
+                  <img
+                    src="../assets/images/books/Persuasion-cover.jpg"
+                    alt="Persuasion"
+                    height="100px"
+                    width="100px"
+                  />
+                  <a href="#">Persuasion</a>
+                </span>
+                <span class="flex-col-container category-book-info">
+                  <img
+                    src="../assets/images/books/Taking-Chances-cover.jpg"
+                    alt="Taking Chances"
+                    height="100px"
+                    width="100px"
+                  />
+                  <a href="#">Taking Chances</a>
+                </span>
+              </div>
+            </section>
+          </li>
+          <li>
+            <section class="flex-col-container book-category">
+              <a class="book-catergory-name" href="./fiction.html"
+                ><strong>Fantasy</strong>
+              </a>
+              <div class="flex-row-container warp-contents category-books-info">
+                <span class="flex-col-container category-book-info">
+                  <img
+                    src="../assets/images/books/Alice-in-Wonderland-cover.jpg"
+                    alt="Alice in Wonderland"
+                    height="100px"
+                    width="100px"
+                  />
+                  <a href="#">Alice in Wonderland</a>
+                </span>
+                <span class="flex-col-container category-book-info">
+                  <img
+                    src="../assets/images/books/The-Arabian-Nights-cover.jpg"
+                    alt="The Arabian Nights"
+                    height="100px"
+                    width="100px"
+                  />
+                  <a href="#">The Arabian Nights</a>
+                </span>
+                <span class="flex-col-container category-book-info">
+                  <img
+                    src="../assets/images/books/The-Time-Machine-cover.jpg"
+                    alt="The Time Machine"
+                    height="100px"
+                    width="100px"
+                  />
+                  <a href="#">The Time Machine</a>
+                </span>
+              </div>
+            </section>
+          </li>
+        </ul>
+      </section>
+    </main>
 
-  <main>
-  <section class="flex-row-container" id="book-categories-container">
-    <ul>
-      <li>
-        <section class="flex-col-container book-category">
-          <a class="book-catergory-name" href="./fiction.html"><strong>Literary Fiction</strong></a>
-          <div class="flex-row-container warp-contents category-books-info">
-            <span class="flex-col-container category-book-info">
-              <img src="../assets/images/books/the-adventures-of-Sherlock-Holmes-cover.jpg" alt="The Adventures of Sherlock Holmes" height="100px" width="100px" />
-              <a href="#">The Adventures of Sherlock Holmes</a>
-            </span>
-            <span class="flex-col-container category-book-info">
-              <img src="../assets/images/books/A-Little-Princess-cover.jpg" alt="A Little Princess" height="100px" width="100px" />
-              <a href="#">A Little Princess</a>
-            </span>
-            <span class="flex-col-container category-book-info">
-              <img src="../assets/images/books/The-Grammar-of-English-Grammars.jpg" alt="The Grammar of English Grammars" height="100px" width="100px" />
-             <a href="#">The Grammar of English Grammars</a>
-            </span>
-          </div>
-        </section>
-      </li>
-      <li>
-        <section class="flex-col-container book-category">
-          <a class="book-catergory-name" href="./fiction.html"><strong>Romance</strong>
-          </a>
-          <div class="flex-row-container warp-contents category-books-info">
-            <span class="flex-col-container category-book-info">
-              <img src="../assets/images/books/pride-and-prejudice-cover.jpg" alt="Pride and Prejudice" height="100px" width="100px" />
-              <a href="#">Pride and Prejudice</a>
-            </span>
-            <span class="flex-col-container category-book-info">
-              <img src="../assets/images/books/Persuasion-cover.jpg" alt="Persuasion" height="100px" width="100px" />
-              <a href="#">Persuasion</a>
-            </span>
-            <span class="flex-col-container category-book-info">
-              <img src="../assets/images/books/Taking-Chances-cover.jpg" alt="Taking Chances" height="100px" width="100px" />
-            <a href="#">Taking Chances</a>
-            </span>
-          </div>
-        </section>
-      </li>
-      <li>
-        <section class="flex-col-container book-category">
-          <a class="book-catergory-name" href="./fiction.html"><strong>Fantasy</strong>
-          </a>
-          <div class="flex-row-container warp-contents category-books-info">
-            <span class="flex-col-container category-book-info">
-              <img src="../assets/images/books/Alice-in-Wonderland-cover.jpg" alt="Alice in Wonderland" height="100px" width="100px" />
-             <a href="#">Alice in Wonderland</a>
-            </span>
-            <span class="flex-col-container category-book-info">
-              <img src="../assets/images/books/The-Arabian-Nights-cover.jpg" alt="The Arabian Nights" height="100px" width="100px" />
-              <a href="#">The Arabian Nights</a>
-            </span>
-            <span class="flex-col-container category-book-info">
-              <img src="../assets/images/books/The-Time-Machine-cover.jpg" alt="The Time Machine" height="100px" width="100px" />
-              <a href="#">The Time Machine</a>
-            </span>
-          </div>
-        </section>
-      </li>
-    </ul>
-  </section>
-  </main>
-
-  <footer>
-    <nav class="flex-row-container" id="footer-nav">
-      <a class="nav-link" href="#">About us</a>
-      <a class="nav-link" href="#">Privacy Policy</a>
-      <a class="nav-link" href="#">Terms</a>
-      <a class="nav-link" href="#">Copyright</a>
-      <a class="nav-link" href="./contact.html">Contact Us</a>
-    </nav>
-  </footer>
-</body>
-
+    <footer>
+      <nav class="flex-row-container" id="footer-nav">
+        <a class="nav-link" href="#">About us</a>
+        <a class="nav-link" href="#">Privacy Policy</a>
+        <a class="nav-link" href="#">Terms</a>
+        <a class="nav-link" href="#">Copyright</a>
+        <a class="nav-link" href="./contact.html">Contact Us</a>
+      </nav>
+    </footer>
+  </body>
 </html>
