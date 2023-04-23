@@ -14,75 +14,81 @@
 
 <body>
   <header>
-    <div class="top-brand-section">
-      <img class="brand-logo" src="../assets/images/icons/rmit-icon.png" alt="RMIT icon" />
-      <a class="brand-title" href="../index.html">RMIT Bookstore</a>
-    </div>
-    <nav class="top-nav">
-      <a href="../index.html">Home</a>
-      <a href="../pages/non-fiction.html">Non-Fiction</a>
-      <a href="../pages/fiction.html">Fiction</a>
+    <section class="flex-row-container">
+      <img
+        id="top-brand-logo"
+        src="../assets/images/icons/rmit-icon.png"
+        width="10em"
+        alt="RMIT icon"
+      />
+      <a href="../index.html" id="bookstore-title">RMIT Bookstore</a>
+    </section>
+
+    <nav class="flex-col-container" id="top-nav">
+      <a class="nav-link" href="../index.html">Home</a>
+      <a class="nav-link" href="./non-fiction.html">Non-Fiction</a>
+      <a class="nav-link" href="./fiction.html">Fiction</a>
     </nav>
   </header>
+
   <main>
-    </section>
-    <section class="book-categories-container">
+    <section class="flex-row-container" id="book-categories-container">
       <ul>
         <li>
-          <section class="book-category">
-            <a class="catergory-name" href="./non-fiction.html"><strong>History</strong></a>
-            <div class="books-info">
-              <span class="book-info">
-                <img src="../assets\images\icons\rmit-icon.png" alt="B1" height="100px" width="100px" />
-                <p>B1</p>
+          <section class="flex-col-container book-category">
+            <a class="book-catergory-name" href="./non-fiction.html"><strong>History</strong></a>
+            <div class="flex-row-container warp-contents category-books-info">
+              <span class="flex-col-container category-book-info">
+                <img src="../assets/images/books/the-art-of-war-cover.jpg" alt="The Art of War" height="100px" width="100px" />
+                <a href="../pages/book-detail.html">The Art of War</a>
               </span>
-              <span class="book-info">
-                <img src="../assets\images\icons\rmit-icon.png" alt="B2" height="100px" width="100px" />
-                <p>B2</p>
+              <span class="flex-col-container category-book-info">
+                <img src="../assets/images/books/The-Count-of-Monte-Cristo-cover.jpg" alt="The Count of Monte Cristo" height="100px" width="100px" />
+                <a href="#">The Count of Monte Cristo</a>
               </span>
-              <span class="book-info">
-                <img src="../assets\images\icons\rmit-icon.png" alt="B3" height="100px" width="100px" />
-                <p>B3</p>
-              </span>
-            </div>
-          </section>
-        </li>
-        <li>
-          <section class="book-category">
-            <a class="catergory-name" href="./non-fiction.html"><strong>Science and Technology</strong>
-            </a>
-            <div class="books-info">
-              <span class="book-info">
-                <img src="../assets\images\icons\rmit-icon.png" alt="B1" height="100px" width="100px" />
-                <p>B1</p>
-              </span>
-              <span class="book-info">
-                <img src="../assets\images\icons\rmit-icon.png" alt="B2" height="100px" width="100px" />
-                <p>B2</p>
-              </span>
-              <span class="book-info">
-                <img src="../assets\images\icons\rmit-icon.png" alt="B3" height="100px" width="100px" />
-                <p>B3</p>
+              <span class="flex-col-container category-book-info">
+                <img src="../assets/images/books/Tween-Snow-and-Fire-cover.jpg" alt="Tween Snow and Fire" height="100px" width="100px" />
+               <a href="#">Tween Snow and Fire</a>
               </span>
             </div>
           </section>
         </li>
         <li>
-          <section class="book-category">
-            <a class="catergory-name" href="./non-fiction.html"><strong>Art and Photography</strong>
+          <section class="flex-col-container book-category">
+            <a class="book-catergory-name" href="./non-fiction.html"><strong>Science and Technology</strong>
             </a>
-            <div class="books-info">
-              <span class="book-info">
-                <img src="../assets\images\icons\rmit-icon.png" alt="B1" height="100px" width="100px" />
-                <p>B1</p>
+            <div class="flex-row-container warp-contents category-books-info">
+              <span class="flex-col-container category-book-info">
+                <img src="../assets/images/books/criminal-psychology-cover.jpg" alt="Criminal Psychology" height="100px" width="100px" />
+                <a href="#">Criminal Psychology</a>
               </span>
-              <span class="book-info">
-                <img src="../assets\images\icons\rmit-icon.png" alt="B2" height="100px" width="100px" />
-                <p>B2</p>
+              <span class="flex-col-container category-book-info">
+                <img src="../assets/images/books/ABC's-of-Science-cover.jpg" alt="ABC's of Science" height="100px" width="100px" />
+                <a href="#">ABC's of Science</a>
               </span>
-              <span class="book-info">
-                <img src="../assets\images\icons\rmit-icon.png" alt="B3" height="100px" width="100px" />
-                <p>B3</p>
+              <span class="flex-col-container category-book-info">
+                <img src="../assets/images/books/On-the-Origin-of-Species-cover.jpg" alt="On the Origin of Species" height="100px" width="100px" />
+                <a href="#">On the Origin of Species</a>
+              </span>
+            </div>
+          </section>
+        </li>
+        <li>
+          <section class="flex-col-container book-category">
+            <a class="book-catergory-name" href="./non-fiction.html"><strong>Art and Photography</strong>
+            </a>
+            <div class="flex-row-container warp-contents category-books-info">
+              <span class="flex-col-container category-book-info">
+                <img src="../assets/images/books/The-art-of-interior-decoration-cover.jpg" alt="The Art of Interior Decoration" height="100px" width="100px" />
+                <a href="#">The Art of Interior Decoration</a>
+              </span>
+              <span class="flex-col-container category-book-info">
+                <img src="../assets/images/books/Art-Lovers-guide-to-the-Exposition-cover.jpg" alt="Art-Lovers guide to the Exposition" height="100px" width="100px" />
+                <a href="#">Art-Lovers guide to the Exposition</a>
+              </span>
+              <span class="flex-col-container category-book-info">
+                <img src="../assets/images/books/The-Elements-of-Drawing-cover.jpg" alt="The Elements of Drawing" height="100px" width="100px" />
+              <a href="#">The Elements of Drawing</a>
               </span>
             </div>
           </section>
@@ -90,16 +96,15 @@
       </ul>
     </section>
   </main>
+
   <footer>
-    <div class="footer-nav-container">
-      <nav class="footer-nav">
-        <a href="../index.html">About us</a>
-        <a href="../index.html">Privacy Policy</a>
-        <a href="../index.html">Terms</a>
-        <a href="../index.html">Copyright</a>
-        <a href="./contact.html">Contact Us</a>
-      </nav>
-    </div>
+    <nav class="flex-row-container" id="footer-nav">
+      <a class="nav-link" href="#">About us</a>
+      <a class="nav-link" href="#">Privacy Policy</a>
+      <a class="nav-link" href="#">Terms</a>
+      <a class="nav-link" href="#">Copyright</a>
+      <a class="nav-link" href="./contact.html">Contact Us</a>
+    </nav>
   </footer>
 </body>
 

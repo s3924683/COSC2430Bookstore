@@ -17,26 +17,34 @@
 
   <body>
     <header>
-      <div class="top-brand-section">
+      <section class="flex-row-container">
         <img
-          class="brand-logo"
+          id="top-brand-logo"
           src="../assets/images/icons/rmit-icon.png"
+          width="10em"
           alt="RMIT icon"
         />
-        <a class="brand-title" href="../index.html">RMIT Bookstore</a>
-      </div>
-      <nav class="top-nav">
-        <a href="../index.html">Home</a>
-        <a href="../pages/non-fiction.html">Non-Fiction</a>
-        <a href="../pages/fiction.html">Fiction</a>
+        <a href="../index.html" id="bookstore-title">RMIT Bookstore</a>
+      </section>
+
+      <nav class="flex-col-container" id="top-nav">
+        <a class="nav-link" href="../index.html">Home</a>
+        <a class="nav-link" href="./non-fiction.html">Non-Fiction</a>
+        <a class="nav-link" href="./fiction.html">Fiction</a>
       </nav>
     </header>
-    <main>
-      <div class="form-container">
-        <form action="" method="post" id="contact-us-form">
-          <legend class="form-title">Contact us</legend>
 
-          <fieldset>
+    <main>
+      <div class="flex-col-container contact-us-form-container">
+        <form
+          action=""
+          method="post"
+          class="flex-col-container"
+          id="contact-us-form"
+        >
+          <legend id="contact-us-form-title">Contact us</legend>
+
+          <fieldset class="flex-row-container warp-contents">
             <label for="contact-purpose">Contact purpose:</label>
             <select name="contact-purpose" id="contact-purpose" required>
               <option value="sell-books">I want to sell books</option>
@@ -58,7 +66,10 @@
             />
           </fieldset>
 
-          <fieldset id="form-contact-preference">
+          <fieldset
+            class="flex-row-container warp-contents"
+            id="form-contact-preference"
+          >
             <label>Contact preference:</label>
             <div>
               <label for="email-preference">By email</label>
@@ -78,7 +89,10 @@
             </div>
           </fieldset>
 
-          <fieldset id="form-weekly-newsletter">
+          <fieldset
+            class="flex-row-container warp-contents"
+            id="form-weekly-newsletter"
+          >
             <label>Receive weekly newsletter:</label>
             <div>
               <label for="weekly-newsletter-yes">Yes</label>
@@ -107,7 +121,10 @@
             <textarea></textarea>
           </fieldset>
 
-          <div class="form-buttons">
+          <div
+            class="flex-row-container warp-contents"
+            id="contact-us-form-buttons"
+          >
             <input type="submit" />
             <input type="reset" />
           </div>
@@ -115,15 +132,13 @@
       </div>
     </main>
     <footer>
-      <div class="footer-nav-container">
-        <nav class="footer-nav">
-          <a href="../index.html">About us</a>
-          <a href="../index.html">Privacy Policy</a>
-          <a href="../index.html">Terms</a>
-          <a href="../index.html">Copyright</a>
-          <a href="./contact.html">Contact Us</a>
-        </nav>
-      </div>
+      <nav class="flex-row-container" id="footer-nav">
+        <a class="nav-link" href="#">About us</a>
+        <a class="nav-link" href="#">Privacy Policy</a>
+        <a class="nav-link" href="#">Terms</a>
+        <a class="nav-link" href="#">Copyright</a>
+        <a class="nav-link" href="./contact.html">Contact Us</a>
+      </nav>
     </footer>
   </body>
 </html>

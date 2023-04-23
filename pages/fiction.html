@@ -14,75 +14,81 @@
 
 <body>
   <header>
-    <div class="top-brand-section">
-      <img class="brand-logo" src="../assets/images/icons/rmit-icon.png" alt="RMIT icon" />
-      <a class="brand-title" href="../index.html">RMIT Bookstore</a>
-    </div>
-    <nav class="top-nav">
-      <a href="../index.html">Home</a>
-      <a href="../pages/non-fiction.html">Non-Fiction</a>
-      <a href="../pages/fiction.html">Fiction</a>
+    <section class="flex-row-container">
+      <img
+        id="top-brand-logo"
+        src="../assets/images/icons/rmit-icon.png"
+        width="10em"
+        alt="RMIT icon"
+      />
+      <a href="../index.html" id="bookstore-title">RMIT Bookstore</a>
+    </section>
+
+    <nav class="flex-col-container" id="top-nav">
+      <a class="nav-link" href="../index.html">Home</a>
+      <a class="nav-link" href="./non-fiction.html">Non-Fiction</a>
+      <a class="nav-link" href="./fiction.html">Fiction</a>
     </nav>
   </header>
+
   <main>
-  </section>
-  <section class="book-categories-container">
+  <section class="flex-row-container" id="book-categories-container">
     <ul>
       <li>
-        <section class="book-category">
-          <a class="catergory-name" href="./fiction.html"><strong>Literary Fiction</strong></a>
-          <div class="books-info">
-            <span class="book-info">
-              <img src="../assets\images\icons\rmit-icon.png" alt="B1" height="100px" width="100px" />
-              <p>B1</p>
+        <section class="flex-col-container book-category">
+          <a class="book-catergory-name" href="./fiction.html"><strong>Literary Fiction</strong></a>
+          <div class="flex-row-container warp-contents category-books-info">
+            <span class="flex-col-container category-book-info">
+              <img src="../assets/images/books/the-adventures-of-Sherlock-Holmes-cover.jpg" alt="The Adventures of Sherlock Holmes" height="100px" width="100px" />
+              <a href="#">The Adventures of Sherlock Holmes</a>
             </span>
-            <span class="book-info">
-              <img src="../assets\images\icons\rmit-icon.png" alt="B2" height="100px" width="100px" />
-              <p>B2</p>
+            <span class="flex-col-container category-book-info">
+              <img src="../assets/images/books/A-Little-Princess-cover.jpg" alt="A Little Princess" height="100px" width="100px" />
+              <a href="#">A Little Princess</a>
             </span>
-            <span class="book-info">
-              <img src="../assets\images\icons\rmit-icon.png" alt="B3" height="100px" width="100px" />
-              <p>B3</p>
-            </span>
-          </div>
-        </section>
-      </li>
-      <li>
-        <section class="book-category">
-          <a class="catergory-name" href="./fiction.html"><strong>Romance</strong>
-          </a>
-          <div class="books-info">
-            <span class="book-info">
-              <img src="../assets\images\icons\rmit-icon.png" alt="B1" height="100px" width="100px" />
-              <p>B1</p>
-            </span>
-            <span class="book-info">
-              <img src="../assets\images\icons\rmit-icon.png" alt="B2" height="100px" width="100px" />
-              <p>B2</p>
-            </span>
-            <span class="book-info">
-              <img src="../assets\images\icons\rmit-icon.png" alt="B3" height="100px" width="100px" />
-              <p>B3</p>
+            <span class="flex-col-container category-book-info">
+              <img src="../assets/images/books/The-Grammar-of-English-Grammars.jpg" alt="The Grammar of English Grammars" height="100px" width="100px" />
+             <a href="#">The Grammar of English Grammars</a>
             </span>
           </div>
         </section>
       </li>
       <li>
-        <section class="book-category">
-          <a class="catergory-name" href="./fiction.html"><strong>Fantasy</strong>
+        <section class="flex-col-container book-category">
+          <a class="book-catergory-name" href="./fiction.html"><strong>Romance</strong>
           </a>
-          <div class="books-info">
-            <span class="book-info">
-              <img src="../assets\images\icons\rmit-icon.png" alt="B1" height="100px" width="100px" />
-              <p>B1</p>
+          <div class="flex-row-container warp-contents category-books-info">
+            <span class="flex-col-container category-book-info">
+              <img src="../assets/images/books/pride-and-prejudice-cover.jpg" alt="Pride and Prejudice" height="100px" width="100px" />
+              <a href="#">Pride and Prejudice</a>
             </span>
-            <span class="book-info">
-              <img src="../assets\images\icons\rmit-icon.png" alt="B2" height="100px" width="100px" />
-              <p>B2</p>
+            <span class="flex-col-container category-book-info">
+              <img src="../assets/images/books/Persuasion-cover.jpg" alt="Persuasion" height="100px" width="100px" />
+              <a href="#">Persuasion</a>
             </span>
-            <span class="book-info">
-              <img src="../assets\images\icons\rmit-icon.png" alt="B3" height="100px" width="100px" />
-              <p>B3</p>
+            <span class="flex-col-container category-book-info">
+              <img src="../assets/images/books/Taking-Chances-cover.jpg" alt="Taking Chances" height="100px" width="100px" />
+            <a href="#">Taking Chances</a>
+            </span>
+          </div>
+        </section>
+      </li>
+      <li>
+        <section class="flex-col-container book-category">
+          <a class="book-catergory-name" href="./fiction.html"><strong>Fantasy</strong>
+          </a>
+          <div class="flex-row-container warp-contents category-books-info">
+            <span class="flex-col-container category-book-info">
+              <img src="../assets/images/books/Alice-in-Wonderland-cover.jpg" alt="Alice in Wonderland" height="100px" width="100px" />
+             <a href="#">Alice in Wonderland</a>
+            </span>
+            <span class="flex-col-container category-book-info">
+              <img src="../assets/images/books/The-Arabian-Nights-cover.jpg" alt="The Arabian Nights" height="100px" width="100px" />
+              <a href="#">The Arabian Nights</a>
+            </span>
+            <span class="flex-col-container category-book-info">
+              <img src="../assets/images/books/The-Time-Machine-cover.jpg" alt="The Time Machine" height="100px" width="100px" />
+              <a href="#">The Time Machine</a>
             </span>
           </div>
         </section>
@@ -90,16 +96,15 @@
     </ul>
   </section>
   </main>
+
   <footer>
-    <div class="footer-nav-container">
-      <nav class="footer-nav">
-        <a href="../index.html">About us</a>
-        <a href="../index.html">Privacy Policy</a>
-        <a href="../index.html">Terms</a>
-        <a href="../index.html">Copyright</a>
-        <a href="./contact.html">Contact Us</a>
-      </nav>
-    </div>
+    <nav class="flex-row-container" id="footer-nav">
+      <a class="nav-link" href="#">About us</a>
+      <a class="nav-link" href="#">Privacy Policy</a>
+      <a class="nav-link" href="#">Terms</a>
+      <a class="nav-link" href="#">Copyright</a>
+      <a class="nav-link" href="./contact.html">Contact Us</a>
+    </nav>
   </footer>
 </body>
 
