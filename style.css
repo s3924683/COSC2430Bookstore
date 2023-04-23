@@ -282,7 +282,7 @@ footer {
   font-weight: bold;
 }
 .book-detail-purchase-container button {
-  font-size: 1.0em;
+  font-size: 1em;
   border-radius: 0.3em;
   padding: 0.3em;
 }
@@ -311,7 +311,7 @@ footer {
   #top-nav a {
     border-style: none;
   }
-  .book-detail-extra-images-container{
+  .book-detail-extra-images-container {
     flex-direction: column;
   }
 }
